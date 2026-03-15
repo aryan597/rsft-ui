@@ -4,6 +4,16 @@ import Landing from './pages/Landing';
 import CandidateDashboard from './pages/CandidateDashboard';
 import RecruiterOnboarding from './pages/RecruiterOnboarding';
 import CandidateOnboarding from './pages/CandidateOnboarding';
+import Features from './pages/Features';
+import Pricing from './pages/Pricing';
+import Roadmap from './pages/Roadmap';
+import Company from './pages/Company';
+import About from './pages/About';
+import Blog from './pages/Blog';
+import Careers from './pages/Careers';
+import Privacy from './pages/Privacy';
+import Terms from './pages/Terms';
+import Cookies from './pages/Cookies';
 import { ThemeProvider } from './context/ThemeContext';
 import DashboardLayout from './components/layout/DashboardLayout';
 
@@ -68,6 +78,16 @@ function App() {
         <div className="min-h-screen bg-white dark:bg-gray-900">
           <Routes>
             <Route path="/rsft-ui/" element={<LandingWithSelector />} />
+            <Route path="/rsft-ui/features" element={<Features />} />
+            <Route path="/rsft-ui/pricing" element={<Pricing />} />
+            <Route path="/rsft-ui/roadmap" element={<Roadmap />} />
+            <Route path="/rsft-ui/company" element={<Company />} />
+            <Route path="/rsft-ui/about" element={<About />} />
+            <Route path="/rsft-ui/blog" element={<Blog />} />
+            <Route path="/rsft-ui/careers" element={<Careers />} />
+            <Route path="/rsft-ui/privacy" element={<Privacy />} />
+            <Route path="/rsft-ui/terms" element={<Terms />} />
+            <Route path="/rsft-ui/cookies" element={<Cookies />} />
             <Route path="/rsft-ui/onboarding/recruiter" element={<RecruiterOnboarding />} />
             <Route path="/rsft-ui/onboarding/candidate" element={<CandidateOnboarding />} />
             <Route path="/rsft-ui/dashboard/*" element={<DashboardLayout />} />

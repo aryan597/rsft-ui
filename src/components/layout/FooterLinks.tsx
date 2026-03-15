@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 
 interface FooterLink {
   href: string;
@@ -17,12 +17,12 @@ export function FooterLinks({ title, links }: FooterLinksProps) {
       <ul className="space-y-2">
         {links.map((link) => (
           <li key={link.href}>
-            <a
-              href={link.href}
+            <Link
+              to={link.href}
               className="hover:underline font-mono text-sm"
             >
               {link.text}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
